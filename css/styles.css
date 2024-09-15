@@ -115,8 +115,9 @@ body {
   background-color: #ffffff;
 }
 img {
-  display: block;
-}
+  display: block;}
+
+
 
 .wshead {
   border-bottom: 1px solid #e7e9fc;
@@ -644,7 +645,7 @@ ul {
 .instafooter:focus {
   background-color: #31d0aa;
 }
-/* footer form */
+/* ---------------footer form----------------- */
 
 
 .form-footer-paragraf {
@@ -712,7 +713,7 @@ background-color: #404bbf;
   margin-left: 16px;
 }
 
-/* modal window */
+/*--------------- modal window-------------------- */
 .modal-overlay {
   display: flex;
   justify-content: center;
@@ -962,3 +963,199 @@ fill: transparent;
   color: #4d5ae5;
   text-decoration: underline;
 }
+
+
+/* Адаптивний дизайн для екранів до 320px */
+@media (min-width: 320px) {
+
+  .head-container,
+  .container {
+      width: 320px;
+        margin: 0 auto;
+        padding: 0 16px;
+        
+            max-width: 100%;
+          }
+  
+ .head-container{
+  display: flex;
+ }
+  
+.logo,
+.wslogo {
+
+  
+}
+.button-order-bar {
+  cursor: pointer;
+}
+
+  .navigation, .address-contact {
+   display: none;
+  }
+
+    .section-main {
+      padding: 72px 0;
+    
+      background-size: auto 100%;
+      
+    }
+  
+    .paragraf {
+       
+        width: 216px;
+        font-size: 36px;
+        margin-bottom: 72px;
+    }
+
+  .benefits-list {
+    flex-direction: column;
+    gap: 72px;
+  
+    margin-bottom: 96px;
+  }
+
+
+  .firstelement {
+    width: 100%;
+    
+  }
+
+  .advantages {
+  font-size: 36px;
+  }
+  
+    .benefits {
+      padding: 96px 0 96px;
+      
+    }
+
+  
+    .icon-benefits {
+      display: none;
+    }
+
+
+    .advantages {
+      text-align: center;
+    }
+    .descr {
+      text-align: left;
+    }
+  
+    .descr {
+    
+    }  
+
+
+ 
+
+.team {
+  font-size: 36px;
+  
+}
+
+.teamlist {
+  flex-direction: column;
+  align-items: center;
+  width: 264px;
+margin: auto;
+  gap: 24px;
+}
+
+.image {
+  width: 100%;
+}
+
+.worker {
+  
+}
+
+.name {
+  font-size: 20px;
+ 
+}
+
+.prof {
+  font-size: 16px;
+
+}
+
+.portfolio{
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+
+}
+.portfimage {
+  width: 100%;
+}
+
+.team-portf {
+  font-size: 36px;
+}
+
+.portf {
+font-size: 20px;
+}
+.spec{
+  font-size: 16px;
+}   
+.container-foot{
+  width: 320px;
+    margin: 0 auto;
+    padding: 0 16px;
+    max-width: 100%;
+  flex-direction: column;
+  align-items: center;
+  gap: 72px;
+}
+
+.logofoot {
+margin-left: 76px;
+
+}
+
+.footdescr {
+  
+ 
+}
+
+.socialmedia-paragraf {
+text-align: center;
+}
+
+.iconsocialfooter {
+ 
+}
+
+}
+
+.footer-form{
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-container {
+  margin: auto;
+
+  text-align: center;
+}
+
+.logofoot-and-p{
+  margin: auto;
+  
+}
+.socialmedia-container{
+   
+}
+
+  
+    
+ 
+
+    
+  
+  
+
