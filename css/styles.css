@@ -945,27 +945,7 @@ ul {
   text-decoration: underline;
 }
 
-/*-----------MODAL320-------*/
 
-.modal {
-  padding: 72px 24px 16px 16px;
-  width: 288px;
-  min-height: 263px;
-}
-.form-input,
-.comment-area {
-  width: 256px;
-}
-.form-button {
-  margin-left: auto;
-  margin-right: auto;
-}
-.modal-form {
-  width: auto;
-}
-
-.checkbox-label {
-}
 
 /*----------------orderbar---------------*/
 
@@ -1185,6 +1165,31 @@ ul {
     margin: auto;
     text-align: center;
   }
+/*-----------MODAL MoBile--------*/
+.modal {
+   padding: 72px 16px 24px 16px;
+   width: 288px;
+  min-height: 623px;
+}
+
+.form-input, .comment-area {
+  width: 256px;
+}
+.checkbox-label
+{
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-descr {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-button {
+   margin:auto;
+}
+
 }
 
 @media (min-width: 768px) {
@@ -1247,6 +1252,15 @@ ul {
     margin-left: 0;
     margin-right: 207px;
   }
+    .checkbox-label {
+      display: flex;
+      align-items: center;
+    }
+  
+    .checkbox-descr {
+     
+  flex-direction: row;
+    }
 }
 
 @media (min-width: 1158px) {
