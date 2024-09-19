@@ -559,7 +559,7 @@ ul {
   align-items: baseline;
   width: 1158px;
   margin: 0 auto;
-  padding: 0 15px;
+ 
 }
 
 .foot {
@@ -832,6 +832,7 @@ ul {
   top: 50%;
   transform: translateY(-50%);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ 
 }
 
 .form-input:focus + .svg-name {
@@ -971,7 +972,7 @@ ul {
 }
 
 .modal-orderbar {
-  padding: 0px 16px 24px 24px;
+  padding: 16px 16px 24px 16px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1009,8 +1010,11 @@ ul {
   border: none;
   fill: #ffffff;
 }
+
+
 .navigation-orderbar {
-  margin-top: 72px;
+  padding-top: 72px;
+  margin-bottom: 168px;
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -1037,7 +1041,7 @@ ul {
   display: flex;
   flex-direction: column-reverse;
   gap: 24px;
-  margin-top: 168px;
+ 
 }
 
 .contact-orderbar {
@@ -1056,10 +1060,12 @@ ul {
   color: #404bbf;
 }
 
+.icon-list-container {
+  margin-top: 48px;
+}
 .icon-list-orderbar {
   display: flex;
-  justify-content: center;
-  margin-top: 48px;
+  justify-content: flex-start;
   gap: 40px;
 }
 
@@ -1094,11 +1100,20 @@ ul {
   .icon-benefits {
     display: none;
   }
+  .section-main {
+    padding: 72px 0;
+  }
   .button-order-bar {
     cursor: pointer;
   }
+  .butt {
+    margin-top: 72px;
+  }
   .logo {
     margin-right: 149px;
+  }
+  .benefits, .sector, .portfolio, .foot{
+    padding: 96px 0;
   }
   .benefits-list,
   .teamlist,
@@ -1145,10 +1160,16 @@ ul {
     align-items: center;
     gap: 72px;
   }
+  .logofoot {
+    margin: 0;
+
+  }
 
   .logofoot-and-p {
     flex-direction: column;
+    align-items: center;
     margin: auto;
+    gap: 16px;
   }
 
   .footer-form {
@@ -1197,6 +1218,18 @@ ul {
   .container {
     width: 768px;
   }
+  .section-main {
+    padding: 112px 0;
+  }
+.butt {
+  margin-top: 36px;
+}
+.benefits,
+.sector,
+.portfolio,
+.foot {
+  padding: 96px 0;
+}
 
   .navigation {
     flex-direction: row;
@@ -1212,6 +1245,10 @@ ul {
   .button-order-bar {
     display: none;
   }
+.advantages {
+  font-weight: 700;
+    font-size: 36px;
+}
 
   .image {
     width: calc((100% - 216px) / 2);
@@ -1234,7 +1271,8 @@ ul {
   .container-foot {
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 24px;
+    row-gap: 72px;
+    column-gap: 24px;
     padding-left: 108px;
     width: 100%;
   }
@@ -1268,6 +1306,21 @@ ul {
   .container {
     width: 1158px;
   }
+    .section-main {
+      padding: 188px 0;
+    }
+    .butt {margin-top: 48px;}
+
+        .benefits,
+        .sector,
+        .portfolio,
+        .foot {
+          padding: 120px 0;
+        }
+        .advantages {
+          font-weight: 500;
+            font-size: 20px;
+        }
   .icon-benefits {
     display: flex;
   }
@@ -1286,22 +1339,37 @@ ul {
   }
 
   .container-foot {
-    flex-wrap: nowrap;
-    text-justify: space-between;
+  
     width: 1158px;
-    margin: 0 auto;
-    padding: 0 15px;
+    margin: 0 auto; 
+        column-gap: 0px;
+       padding-left: 0;
+    margin-left: 156px;
   }
-  .foot {
-    padding: 100px 0;
-    background: #2e2f42;
-  }
-
+  
   .form-container {
     margin-left: 80px;
     margin-right: 0;
   }
   .socialmedia-container {
-    margin-left: 80px;
+    margin-left: 120px;
+  }
+}
+
+
+
+.section-main {
+  
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)),
+    url(../images/Dark-bg1х.jpg);
+}
+
+@media (min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+  .section-main {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)),
+      url(../images/Dark-bg2х.jpg);
   }
 }
