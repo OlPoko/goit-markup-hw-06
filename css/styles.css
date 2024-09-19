@@ -1014,7 +1014,7 @@ ul {
 
 .navigation-orderbar {
   padding-top: 72px;
-   margin-bottom: 26vh;
+  
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -1092,6 +1092,21 @@ ul {
 
 .iconstyle-orderbar {
   fill: #f4f4fd;
+}
+
+.menu-contact {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 40px;
+}
+.bar {
+  
+      display: flex;
+      flex-direction: column;
+      width: 100vw;
+      height: 100vh;
+      justify-content: space-between;
+    
 }
 
 @media (max-width: 767px) {
