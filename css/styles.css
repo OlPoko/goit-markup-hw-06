@@ -1014,7 +1014,7 @@ ul {
 
 .navigation-orderbar {
   padding-top: 72px;
-  margin-bottom: 168px;
+   margin-bottom: 26vh;
   display: flex;
   flex-direction: column;
   gap: 40px;
