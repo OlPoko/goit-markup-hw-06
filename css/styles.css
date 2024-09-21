@@ -559,7 +559,6 @@ ul {
   align-items: baseline;
   width: 1158px;
   margin: 0 auto;
- 
 }
 
 .foot {
@@ -588,7 +587,7 @@ ul {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #ffffff;
-  margin-bottom: 16px;
+  
 }
 
 .icon-list-footer {
@@ -643,6 +642,11 @@ ul {
 .instafooter:hover,
 .instafooter:focus {
   background-color: #31d0aa;
+}
+.socialmedia-container{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 /* ---------------footer form----------------- */
 
@@ -832,7 +836,6 @@ ul {
   top: 50%;
   transform: translateY(-50%);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
- 
 }
 
 .form-input:focus + .svg-name {
@@ -946,8 +949,6 @@ ul {
   text-decoration: underline;
 }
 
-
-
 /*----------------orderbar---------------*/
 
 .modal-overlay-orderbar {
@@ -1011,10 +1012,9 @@ ul {
   fill: #ffffff;
 }
 
-
 .navigation-orderbar {
   padding-top: 72px;
-  
+
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -1041,7 +1041,6 @@ ul {
   display: flex;
   flex-direction: column-reverse;
   gap: 24px;
- 
 }
 
 .contact-orderbar {
@@ -1100,16 +1099,19 @@ ul {
   padding-bottom: 40px;
 }
 .bar {
-  
-      display: flex;
-      flex-direction: column;
-      width: 100vw;
-      height: 100vh;
-      justify-content: space-between;
-    
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  justify-content: space-between;
 }
 
 @media (max-width: 767px) {
+  .container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 16px;
+  }
   .navigation,
   .address-contact,
   .icon-benefits {
@@ -1117,6 +1119,11 @@ ul {
   }
   .section-main {
     padding: 72px 0;
+  }
+  .paragraf {
+    font-size: 36px;
+    margin-left: 52px;
+    margin-right: 52px;
   }
   .button-order-bar {
     cursor: pointer;
@@ -1127,7 +1134,10 @@ ul {
   .logo {
     margin-right: 149px;
   }
-  .benefits, .sector, .portfolio, .foot{
+  .benefits,
+  .sector,
+  .portfolio,
+  .foot {
     padding: 96px 0;
   }
   .benefits-list,
@@ -1177,7 +1187,6 @@ ul {
   }
   .logofoot {
     margin: 0;
-
   }
 
   .logofoot-and-p {
@@ -1201,50 +1210,61 @@ ul {
     margin: auto;
     text-align: center;
   }
-/*-----------MODAL MoBile--------*/
-.modal {
-   padding: 72px 16px 24px 16px;
-   width: 288px;
-  min-height: 623px;
-}
+  /*-----------MODAL MoBile--------*/
+  .container {
+    width: 320px;
+    margin: 0 auto;
+    padding: 0 16px;
+  }
 
-.form-input, .comment-area {
-  width: 256px;
-}
-.checkbox-label
-{
-  display: flex;
-  align-items: center;
-}
+  .modal {
+    padding: 72px 16px 24px 16px;
+    width: 288px;
+    min-height: 623px;
+  }
 
-.checkbox-descr {
-  display: flex;
-  flex-direction: column;
-}
+  .form-input,
+  .comment-area {
+    width: 256px;
+  }
+  .checkbox-label {
+    display: flex;
+    align-items: center;
+  }
 
-.form-button {
-   margin:auto;
-}
+  .checkbox-descr {
+    display: flex;
+    flex-direction: column;
+  }
 
+  .form-button {
+    margin: auto;
+  }
 }
 
 @media (min-width: 768px) {
   .head-container,
   .container {
     width: 768px;
+    margin: 0 auto;
+    padding: 0 16px;
   }
   .section-main {
     padding: 112px 0;
   }
-.butt {
-  margin-top: 36px;
-}
-.benefits,
-.sector,
-.portfolio,
-.foot {
-  padding: 96px 0;
-}
+  .paragraf {
+    font-size: 56px;
+  }
+
+  .butt {
+    margin-top: 36px;
+  }
+  .benefits,
+  .sector,
+  .portfolio,
+  .foot {
+    padding: 96px 0;
+  }
 
   .navigation {
     flex-direction: row;
@@ -1260,10 +1280,10 @@ ul {
   .button-order-bar {
     display: none;
   }
-.advantages {
-  font-weight: 700;
+  .advantages {
+    font-weight: 700;
     font-size: 36px;
-}
+  }
 
   .image {
     width: calc((100% - 216px) / 2);
@@ -1286,10 +1306,11 @@ ul {
   .container-foot {
     flex-direction: row;
     flex-wrap: wrap;
-    row-gap: 72px;
     column-gap: 24px;
-    padding-left: 108px;
-    width: 100%;
+    margin-left: 108px;
+    width: 768px;
+
+    
   }
 
   .logofoot {
@@ -1299,43 +1320,52 @@ ul {
   .logofoot-and-p {
     flex-direction: column;
     gap: 16px;
-    margin: 0;
+    margin-right: 0;
   }
   .form-container {
     margin-left: 0;
-    margin-right: 207px;
+    
   }
-    .checkbox-label {
-      display: flex;
-      align-items: center;
-    }
-  
-    .checkbox-descr {
-     
-  flex-direction: row;
-    }
+  .checkbox-label {
+    display: flex;
+    align-items: center;
+  }
+
+  .checkbox-descr {
+    flex-direction: row;
+  }
+
+  .foot {
+    width: 100%;
+    margin: 0 auto;
+    padding: 96px 16px;
+  }
 }
 
 @media (min-width: 1158px) {
   .head-container,
   .container {
-    width: 1158px;
+    width: 100%;
+    padding: 0 16px;
   }
-    .section-main {
-      padding: 188px 0;
-    }
-    .butt {margin-top: 48px;}
 
-        .benefits,
-        .sector,
-        .portfolio,
-        .foot {
-          padding: 120px 0;
-        }
-        .advantages {
-          font-weight: 500;
-            font-size: 20px;
-        }
+  .section-main {
+    padding: 188px 0;
+  }
+  .butt {
+    margin-top: 48px;
+  }
+
+  .benefits,
+  .sector,
+  .portfolio,
+  .foot {
+    padding: 120px 0;
+  }
+  .advantages {
+    font-weight: 500;
+    font-size: 20px;
+  }
   .icon-benefits {
     display: flex;
   }
@@ -1352,16 +1382,20 @@ ul {
     margin-left: 332px;
     gap: 40px;
   }
-
-  .container-foot {
-  
-    width: 1158px;
-    margin: 0 auto; 
-        column-gap: 0px;
-       padding-left: 0;
-    margin-left: 156px;
+  container-foot {
+    display: flex;
+    flex-direction: row;
+    column-gap: 0;
+    flex-wrap: nowrap;
+    align-items: baseline;
+    width: 768px;
+    margin: 0 auto;
   }
-  
+
+  .foot {
+    width: 100%;
+  }
+
   .form-container {
     margin-left: 80px;
     margin-right: 0;
@@ -1374,17 +1408,46 @@ ul {
 /*---------- Resol --------*/
 
 .section-main {
-  
-  background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)),
-    url(../images/Dark-bg1х.jpg);
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url("../images/Dark-bg\ 1x.jpg");
 }
 
-@media (min-resolution: 192dpi),
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .section-main {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+  ),
+      url("../images/Dark-bg\ 2x.jpg");
+  }
+}
+@media screen and (min-width: 768px) {
+  .section-main {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("../images/Dark-bg\ 768\ 1x.jpg");
+  }
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
 (min-resolution: 2dppx) {
   .section-main {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)),
-      url(../images/Dark-bg2х.jpg);
+      url("../images/Dark-bg\ 768\ 2x\ .jpg");
   }
+}
+
+
+
+
+
+
+
 }
