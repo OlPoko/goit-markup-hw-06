@@ -1351,7 +1351,7 @@ ul {
   .sector,
   .portfolio,
   .foot {
-    padding: 120px 0;
+    padding: 120px 16px;
   }
   .advantages {
     font-weight: 500;
@@ -1360,7 +1360,6 @@ ul {
   .icon-benefits {
     display: flex;
   }
- 
 
   .firstelement,
   .image {
@@ -1372,23 +1371,20 @@ ul {
 
   .address-contact {
     flex-direction: row;
-    margin-left: 332px;
+    margin-left: 300px;
     gap: 40px;
   }
   .container-foot {
-    display: flex;
-    flex-direction: row;
     column-gap: 0;
-    flex-wrap: nowrap;
-    align-items: baseline;
-    margin: 0 auto;
-    width: 100%;
+    width: 1158px;
+    padding-left: 16px;
   }
 
   .form-container {
     margin-left: 80px;
     margin-right: 0;
   }
+  
   .socialmedia-container {
     margin-left: 120px;
   }
