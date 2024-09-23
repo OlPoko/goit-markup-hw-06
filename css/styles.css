@@ -1262,7 +1262,7 @@ ul {
   .sector,
   .portfolio,
   .foot {
-    padding: 96px 0;
+    padding: 96px 16px;
   }
 
   .navigation {
@@ -1384,7 +1384,7 @@ ul {
     margin-left: 80px;
     margin-right: 0;
   }
-  
+
   .socialmedia-container {
     margin-left: 120px;
   }
